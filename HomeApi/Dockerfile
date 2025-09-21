@@ -8,7 +8,7 @@ EXPOSE 8081
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
-COPY ["HomeApi/HomeApi.csproj", "HomeApi/"]
+COPY ["HomeApi.csproj", "HomeApi/"]
 RUN dotnet restore "HomeApi/HomeApi.csproj"
 COPY . .
 WORKDIR "/src/HomeApi"
