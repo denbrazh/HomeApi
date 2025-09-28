@@ -32,5 +32,3 @@ jobs:
           platforms: linux/arm64/v8
           push: true
           tags: ghcr.io/denbrazh/homeapi:latest
-
-      # Далее — деплой в кластер (например, через kubectl или helm)
